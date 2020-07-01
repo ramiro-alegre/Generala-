@@ -127,7 +127,7 @@ int PuntosBasicos(int dados[]) { //Puntuacion en el caso de que no haya ninguna 
 int MenuDePuntos(int dados[],int contar[]){ //Con esto se controlan TODAS las situaciones de puntos dadas posibles
     bool bandera,bandera2,bandera3,bandera4;
     int puntuacion; 
-           //mostrarVector(dados,5); //MOSTRAR VALORES DE LOS DADOS
+           
            puntuacion = juegos(dados);
            if (puntuacion == 0) { puntuacion = PuntosBasicos(dados); }
            bandera= escalera(dados);
@@ -147,7 +147,7 @@ int MenuDePuntos(int dados[],int contar[]){ //Con esto se controlan TODAS las si
 //FUNCIONES PARA EL MENU 
 
 
-void PasoDeTurno() { //Recuadro de informacíon
+void PasoDeTurno() { //Recuadro de informacÃ­on
     int i, j;
     rlutil::setColor(rlutil::LIGHTRED);
     for (i = 30; i <= 100; i++) {
