@@ -65,7 +65,7 @@ int main() {
                 puntuacion = MenuDePuntos(dados, contar); //De aca sacamos la puntuacion
 
                 MenuDeDados(dados); cout << "\n" << "\n" << endl << endl << endl;
-                //SYSTEM PAUSE ACAendl;
+                
 
                 puntuacionTotalSolitario += puntuacion;// Acumulador de puntuaciones
 
@@ -81,7 +81,7 @@ int main() {
 
                 while (lanzamientos != 3) {
                     cout << endl;
-                    cout << "¿Tirar nuevamente?(S/N)" << endl; //Pregunta que aparece 2 veces maximo
+                    cout << "Â¿Tirar nuevamente?(S/N)" << endl; //Pregunta que aparece 2 veces maximo
                     cin >> decision; //Ingresa SI O NO
 
 
@@ -90,10 +90,10 @@ int main() {
                         lanzamientos++; //Este contador sirve para que el jugador no sobrepase los 2 lanzamientos
                         cout << "LANZAMIENT0 NRO: " << lanzamientos << endl;
 
-                        cout << "¿Cuantos?" << endl;
+                        cout << "Â¿Cuantos?" << endl;
                         cin >> lanzar; //Ingresa la cantidad de dados que desea modificiar el jugador
                         for (int x = 0; x < lanzar; x++) { //For que va a dar tantas vueltas como dados elige el usuario
-                            cout << "¿Cual?" << endl;
+                            cout << "Â¿Cual?" << endl;
                             cin >> elegirdado;
                             cout << endl;
                             elegirdado = elegirdado - 1; //El -1 es para que dentro del vector seleccione el correcto(comienzan en 0 los vectores)
@@ -202,7 +202,7 @@ int main() {
                     while (lanzamientos != 3) {
 
 
-                        cout << "¿Tirar nuevamente?(S/N)" << endl; //Pregunta que aparece 2 veces maximo
+                        cout << "Â¿Tirar nuevamente?(S/N)" << endl; //Pregunta que aparece 2 veces maximo
                         cin >> decision; //Ingresa SI O NO
 
                         if (decision == 'S'|| decision== 's') {
@@ -211,10 +211,10 @@ int main() {
                             lanzamientos++; //Este contador sirve para que el jugador no sobrepase los 2 lanzamientos
                             cout << "LANZAMIENT0 NRO: " << lanzamientos << endl;
 
-                            cout << "¿Cuantos?" << endl;
+                            cout << "Â¿Cuantos?" << endl;
                             cin >> lanzar; //Ingresa la cantidad de dados que desea modificiar el jugador
                             for (int x = 0; x < lanzar; x++) { //For que va a dar tantas vueltas como dados elige el usuario
-                                cout << "¿Cual?" << endl;
+                                cout << "Â¿Cual?" << endl;
                                 cin >> elegirdado;
                                 cout << endl;
                                 elegirdado = elegirdado - 1; //El -1 es para que dentro del vector seleccione el correcto(comienzan en 0 los vectores)
@@ -301,7 +301,7 @@ int main() {
                     if (j == 10 && puntuacion2 != 50 && tiroDeGracia == true) { system("cls"); GanaModo2jug(puntuacion, puntuacionTotaljug1, jugador1); system("pause"); lanzamientos = 3; system("cls"); }
 
                     while (lanzamientos != 3) {
-                        cout << "¿Tirar nuevamente?(S/N)" << endl; //Pregunta que aparece 2 veces maximo
+                        cout << "Â¿Tirar nuevamente?(S/N)" << endl; //Pregunta que aparece 2 veces maximo
                         cin >> decision; //Ingresa SI O NO
 
                         if (decision == 'S'|| decision== 's') {
@@ -309,10 +309,10 @@ int main() {
                             lanzamientos++; //Este contador sirve para que el jugador no sobrepase los 2 lanzamientos
                             cout << "LANZAMIENT0 NRO: " << lanzamientos << endl;
                             puntuacionTotaljug2 = puntuacionTotaljug2 - puntuacion2; //Resto la puntuacion ya que va a cambiar al tirar nuevamente uno o mas dados
-                            cout << "¿Cuantos?" << endl;
+                            cout << "Â¿Cuantos?" << endl;
                             cin >> lanzar; //Ingresa la cantidad de dados que desea modificiar el jugador
                             for (int x = 0; x < lanzar; x++) { //For que va a dar tantas vueltas como dados elige el usuario
-                                cout << "¿Cual?" << endl;
+                                cout << "Â¿Cual?" << endl;
                                 cin >> elegirdado;
                                 cout << endl;
                                 elegirdado = elegirdado - 1; //El -1 es para que dentro del vector seleccione el correcto(comienzan en 0 los vectores)
